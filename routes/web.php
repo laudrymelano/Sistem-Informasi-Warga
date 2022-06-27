@@ -107,7 +107,7 @@ Route::get('/test', function () {
 
     echo (new TesseractOCR(public_path(('storage/file-surat/ktp14.jpg'))))
         // ->lang('eng')
-        // ->psm(6)
+        ->psm(6)
         // ->oem(2)
         ->run();
 });
